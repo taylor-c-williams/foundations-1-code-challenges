@@ -70,7 +70,11 @@ Output:
 */
 
 export function makeStringArray(arr) {
-    return [];
+    let stringy = [];
+    arr.map (item =>{
+        stringy.push(item.name + item.type);     
+    });        
+    return stringy;
 }
 
 /*
