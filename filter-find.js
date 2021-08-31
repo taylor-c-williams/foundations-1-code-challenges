@@ -72,7 +72,10 @@ Output:
 */
 
 export function getAllFruitsThatCostMoreThanTwo(arr) {
-    return [];
+    let expensive = arr.filter((item) =>{
+        return item.category === 'fruit' && item.price > 2;
+    });
+    return expensive;
 }
 
 
