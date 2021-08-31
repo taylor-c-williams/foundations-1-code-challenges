@@ -104,5 +104,11 @@ Output:
 */
 
 export function listNamesOfAllFruits(arr) {
-    return [];
+    let fruits = [];
+    arr.filter((item) => {
+        if(item.category === 'fruit'){
+            fruits.push(item.id);
+        }
+    });
+    return fruits;
 }
