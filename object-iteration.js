@@ -38,7 +38,10 @@ Output:
 */
 
 export function makeMoreScreamingKeys(someObject) {
-    return {};
+    let scream = Object.keys(someObject);
+    let screaming = scream.map(scream => scream.toUpperCase());
+
+    return screaming;   
 }
 
 /*
