@@ -30,6 +30,7 @@ export function makeArrayOfNames(arr) {
 Output:
 
 ['cat', 'frog', 'dog', 'dog']
+
 */
 
 export function makeReversedArrayOfTypes(arr) {

@@ -100,5 +100,16 @@ Output:
 */
 
 export function makeArrayOfArraysOfArrays(arr) {
-    return [];
+
+    let nameArray = [];
+     arr.map (item =>{
+       nameArray.push([Object.keys(item)[0], item.name]);
+    });
+    let typeArray = [];
+    arr.map (item =>{
+      typeArray.push([Object.keys(item)[1], item.type]);
+   });
+    let arrayArray = [nameArray, typeArray];
+    return arrayArray; 
 }
+   
