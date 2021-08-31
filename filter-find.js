@@ -90,7 +90,11 @@ Output:
 */
 
 export function findTheCheese(arr) {
-    return [];
+    let cheese = 
+     arr.find((item)=>{
+         return item.id === 'cheese';
+     });
+    return cheese;
 }
 
 
