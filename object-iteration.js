@@ -24,7 +24,7 @@ etc
 */
 
 export function makeWeirdStringFromKeys(someObject) {
-    return '';
+    return someObject.name && someObject.age;
 }
 
 
@@ -38,10 +38,13 @@ Output:
 */
 
 export function makeMoreScreamingKeys(someObject) {
+
     let scream = Object.keys(someObject);
     let screaming = scream.map(scream => scream.toUpperCase());
+    let screamScreaming = screaming.map (scream => scream  + scream.type);
 
-    return screaming;   
+    return scream + screamScreaming;
+
 }
 
 /*
